@@ -115,13 +115,110 @@
         </article>
         <p style="font-size: 18px;">You can find the more about the files at <a href="xmlFile1.xml">File1</a> and <a href="xmlFile2.xml"></a> Also
         The template can be found at  <a href="xmltemplateass1.xml">template</a></p>
-        
-        
+<div class="chat-container">
+  <h2>🍕 AahPizzabella Assistant</h2>
+  <div class="messages" id="messages"></div>
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Ask about pizza, hours, delivery..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
 
 <footer style="margin-top:140px">
     2023, All rights reserved
 </footer>
 
+<style>
+  .chat-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  .messages {
+    height: 300px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .message {
+    margin: 5px 0;
+  }
+
+  .user {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .bot {
+    text-align: left;
+    color: #444;
+  }
+
+  .input-area {
+    display: flex;
+    gap: 10px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #e65c00;
+  }
+</style>
+
+<script>
+  async function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const msgBox = document.getElementById("messages");
+    msgBox.innerHTML += `<div class="message user">You: ${msg}</div>`;
+
+    input.value = "";
+
+    try {
+      const res = await fetch("https://pizzabellabot.onrender.com/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: msg })
+      });
+
+      const data = await res.json();
+      msgBox.innerHTML += `<div class="message bot">Bot: ${data.response}</div>`;
+      msgBox.scrollTop = msgBox.scrollHeight;
+    } catch (err) {
+      msgBox.innerHTML += `<div class="message bot">Bot: Sorry, the chatbot is offline right now.</div>`;
+    }
+  }
+</script>
+        
     </body>
 </html>
 
