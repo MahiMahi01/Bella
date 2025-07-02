@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the XML template for ASSIGNMENT1 in seng1050 course made by Maheep singh (3443060) -->
+<!-- This template only contains tags with no information -->
+<!DOCTYPE Category [
+<!ELEMENT Category (name, game+)>
+ <!ELEMENT game (name, description, type*, subject, grade, cost*, equipment?, review*, filename, url*, level?, rules)>
+ <!ATTLIST game number CDATA #REQUIRED>
+ <!ELEMENT equipment (name, cost*)>
+ <!ELEMENT rules (duration?, attempts)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT description (#PCDATA)>
+ <!ELEMENT type (#PCDATA)>
+ <!ELEMENT subject (#PCDATA)>
+ <!ELEMENT grade (#PCDATA)>
+ <!ELEMENT cost (#PCDATA)>
+ <!ELEMENT review (#PCDATA)>
+ <!ELEMENT filename (#PCDATA)>
+ <!ELEMENT url (#PCDATA)>
+ <!ELEMENT level (#PCDATA)>
+ <!ELEMENT duration (#PCDATA)>
+ <!ELEMENT attempts (#PCDATA)>
+
+]>
+
+<Category>
+  <name>Sports</name>
+  <game number="01">
+    <name>Ball Drop</name>
+    <description>A fun game where you add balls to learn multiplication, division and subtraction</description>
+    <type>Ball game</type>
+    <subject>Algebra</subject>
+    <grade>Grade 9</grade>
+    <cost>Free</cost>
+    <equipment>
+      <name>Balls</name>
+      <cost>Free</cost>
+    </equipment>
+    <review>This game is educational and exciting, helping students learn valuable algebric notations</review>
+    <filename>Balldrop</filename>
+    <url>https://www.running.com/</url>
+    <level>Hard</level>
+    <rules>
+      <duration>15 minutes</duration>
+      <attempts>Unlimited</attempts> 
+    </rules>
+  </game>
+  <game number="02">
+    <name>Archery Mania</name>
+    <description>This is an arrow shooting game, where you aim at the correct answer box</description>
+    <type>Shooting game</type>
+    <subject>Geography</subject>
+    <grade>Grade 8</grade>
+    <cost>Free</cost>
+    <equipment>
+      <name>Arrow</name>
+      <cost>free</cost>
+    </equipment>
+    <review>An innovative way to learn geography and enjoy</review>
+    <filename>archery.jpeg</filename>
+    <url>https://www.archeryacademy.com/</url>
+    <level>medium</level>
+    <rules>
+      <duration>10 minutes</duration>
+      <attempts>unlimited</attempts> 
+    </rules>
+  </game>
+  <game number="03">
+    <name>Run impact </name>
+    <description>Collect points by answering the right answer </description>
+    <type>Single player</type>
+    <subject>History</subject>
+    <grade>Grade 8</grade>
+    <cost>free</cost>
+    <equipment>
+      <name>Run zone</name>
+      <cost>Free</cost>
+    </equipment>
+    <review>A new way to learn more about history without feeling bored</review>
+    <filename>Runzone</filename>
+    <url>https://www.running.com/</url>
+    <level>Easy</level>
+    <rules>
+      <duration>18 minutes</duration>
+      <attempts>Unlimited</attempts> 
+    </rules>
+  </game>
+</Category>
+

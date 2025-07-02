@@ -1,0 +1,75 @@
+/* This is the Stylesheet css made by Maheep Singh (3443060) for Assignment 1 
+ *Learning ladder website for SENG1050.
+ */
+ body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+h1{
+    text-transform: uppercase;
+    margin:40px 20px;
+    font-size: 48px;
+    color: #d21616;
+    font-weight: bold;
+    text-align: center;
+    
+}
+h2{
+    font-variant:small-caps;
+    font-size: 24px;
+    font-weight:normal;
+    text-align: left;
+    text-decoration:underline
+}
+header{
+    background-color:#4f4e56;
+   font-size: 30px;
+   font-style:oblique;
+   text-transform:uppercase;
+
+}
+nav{
+    background-color:#4f4e56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    
+}
+nav a{text-decoration:solid;
+  
+    margin: 15px;
+}
+a:link {color:#a8a80b}
+a:visited {color:coral}
+a:active {color:chartreuse}
+a:hover {color:blueviolet;
+font-size:180%;}
+
+p{
+    font-family:sans-serif, monospace;
+
+}
+main{
+    text-align:center;
+    margin:5px;
+
+}
+.welcome{
+    font-size: 26px;
+    color:rgb(71, 44, 227);
+    font-style: italic;
+    font-weight:200;
+}
+footer{
+    background-color:black;
+    color:aliceblue;
+    margin:10px;
+    font-size:18px;
+    padding:0;
+    text-align:center;
+    text-transform:capitalize;
+    height:40px;
+}
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is XML file 1 of 2 for ASSIGNMENT1 in seng1050 course made by Maheep singh (3443060) -->
+<!-- This XML file is file 1 of 2,which contains data for 3 games which provide educational knowledge as well-->
+<!DOCTYPE Category [
+<!ELEMENT Category (name, game+)>
+ <!ELEMENT game (name, description, type*, subject, grade, cost*, equipment?, review*, filename, url*, level?, rules)>
+ <!ATTLIST game number CDATA #REQUIRED>
+ <!ELEMENT equipment (name, cost*)>
+ <!ELEMENT rules (duration?, attempts)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT description (#PCDATA)>
+ <!ELEMENT type (#PCDATA)>
+ <!ELEMENT subject (#PCDATA)>
+ <!ELEMENT grade (#PCDATA)>
+ <!ELEMENT cost (#PCDATA)>
+ <!ELEMENT review (#PCDATA)>
+ <!ELEMENT filename (#PCDATA)>
+ <!ELEMENT url (#PCDATA)>
+ <!ELEMENT level (#PCDATA)>
+ <!ELEMENT duration (#PCDATA)>
+ <!ELEMENT attempts (#PCDATA)>
+
+]>
+
+<Category>
+  <name>video game</name>
+  <game number="01">
+    <name>Tick-Tack-Toe </name>
+    <description>The famous game of tick tack toe with numbers to learn addition</description>
+    <type>Online game</type>
+    <subject>Match</subject>
+    <grade>Grade 4</grade>
+    <cost>Free</cost>
+    <equipment>
+      <name>Internet</name>
+      <cost>Free</cost>
+    </equipment>
+    <review>A great way to learn addition</review>
+    <filename>TickTack</filename>
+    <url>https://www.ticktacktoe.com//</url>
+    <level>Medium</level>
+    <rules>
+      <duration>10 minutes</duration>
+      <attempts>Unlimited</attempts> 
+    </rules>
+  </game>
+  <game number="02">
+    <name>Spell Bee</name>
+    <description>Spell different and new words by listening an audio to improve vocabulary </description>
+    <type>Online</type>
+    <subject>English</subject>
+    <grade>Grade 7</grade>
+    <cost>Free</cost>
+    <equipment>
+      <name>Spelling cards</name>
+      <cost>5 dollars</cost>
+    </equipment>
+    <review>An innovative way to learn new words</review>
+    <filename>spellbee</filename>
+    <url>https://www.spellingbee.com/</url>
+    <level>Hard</level>
+    <rules>
+      <duration>15 minutes</duration>
+      <attempts>Unlimited</attempts> 
+    </rules>
+  </game>
+  <game number="03">
+    <name>Code monkey</name>
+    <description>Earn points while playing to make coding fun</description>
+    <type>Online</type>
+    <subject>Computer science</subject>
+    <grade>Grade 8</grade>
+    <cost>Free</cost>
+    <equipment>
+      <name>Electronic device</name>
+      <cost>Free</cost>
+    </equipment>
+    <review>An fun way to learn coding </review>
+    <filename>Codemonkey</filename>
+    <url>https://www.codemonkey.com/</url>
+    <level>Easy</level>
+    <rules>
+      <duration>20 minutes</duration>
+      <attempts>10</attempts> 
+    </rules>
+  </game>
+</Category>

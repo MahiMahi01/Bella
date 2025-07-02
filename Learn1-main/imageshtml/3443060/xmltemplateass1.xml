@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the XML template for ASSIGNMENT1 in seng1050 course made by Maheep singh (3443060) -->
+<!-- This template only contains tags with no information -->
+<!DOCTYPE Category [
+<!ELEMENT Category (name, game+)>
+ <!ELEMENT game (name, description, type*, subject, grade, cost*, equipment?, review*, filename, url*, level?, rules)>
+ <!ATTLIST game number CDATA #REQUIRED>
+ <!ELEMENT equipment (name, cost*)>
+ <!ELEMENT rules (duration?, attempts)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT description (#PCDATA)>
+ <!ELEMENT type (#PCDATA)>
+ <!ELEMENT subject (#PCDATA)>
+ <!ELEMENT grade (#PCDATA)>
+ <!ELEMENT cost (#PCDATA)>
+ <!ELEMENT review (#PCDATA)>
+ <!ELEMENT filename (#PCDATA)>
+ <!ELEMENT url (#PCDATA)>
+ <!ELEMENT level (#PCDATA)>
+ <!ELEMENT duration (#PCDATA)>
+ <!ELEMENT attempts (#PCDATA)>
+
+]>
+
+<Category>
+  <name></name>
+  <game number="01">
+    <name></name>
+    <description></description>
+    <type></type>
+    <subject></subject>
+    <grade></grade>
+    <cost></cost>
+    <equipment>
+      <name></name>
+      <cost></cost>
+    </equipment>
+    <review></review>
+    <filename></filename>
+    <url></url>
+    <level></level>
+    <rules>
+      <duration></duration>
+      <attempts></attempts> 
+    </rules>
+  </game>
+</Category>
+
+

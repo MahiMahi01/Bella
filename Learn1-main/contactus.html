@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><!--This is the contact us page of the website made by Maheep Singh(3443060) consisting of a form 
+-->
+    <head>
+        <title>Privacy Policy</title>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="style.css">  
+        <style>
+            .area{
+                margin:2rem;
+                padding:20px;
+                max-width:800px;
+                background-color:rgb(240, 246, 246);
+                box-shadow: 0px 2px 5px black;
+            }
+            .infor{
+                float:right;
+                font-style: italic;
+            }
+            header{
+              
+              color:rgb(223, 228, 222);   
+              padding:1rem;  
+              font-size:28px; 
+              background-color: rgb(160, 82, 23);    
+          }
+          body{
+                background-image: url(imageshtml/contactpic.jpeg);
+                background-size:cover;
+
+            } 
+        </style>    
+        </head>
+    
+    <body>
+         <header>Contact Us</header>
+         <nav>
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="terms.html">Terms and Conditions</a>       
+         </nav>
+         <!--Some of the information here is referenced from https://www.ventureharbour.com/15-contact-form-examples-help-design-ultimate-contact-page/-->
+         <h1><span style="color:rgb(71, 5, 121)">Contact Us</span></h1>
+         <h2 style="color:crimson">Instructions</h2>
+         <p>If you wish to contact us, please feel free to fill out the form below. Filling out all the details is 
+            necessary. Your response would be registered shortly to your mail.
+         </p>
+         <div class="area">
+         <form action="https://jkorpela.fi/cgi-bin/echo.cgi " method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="passwd">Password:</label>
+            <input type="password" id="passwd" required><br><br>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            <br>
+
+            <textarea name="info" rows="3" cols="40">
+        Please put here the information required.
+                </textarea><br><br>
+            
+            <input type="radio" name="urgency" id="low">
+            <label for="low">Low</label><br>
+
+            <input type="radio" name="urgency" id="high">
+            <label for="high">High</label><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+
+
+            </form> 
+        
+        </div>
+        <div class="infor">
+
+        <h3>Contact Information</h3>
+        <address>
+            <strong>Learning Ladder</strong>
+            123 street <br>
+            Newcastle, NSW<br>
+            Australia
+        </address>
+    </div>
+        <p style="font-size: 18px;">You can also contact us at <a href="maheedhanoa04@gmail.com">info</p>
+        <footer style="margin-top:140px">
+        <p><span style="color:goldenrod">All Rights Reserved.</span></p>
+    </footer>
+         </body>
+</html>         
